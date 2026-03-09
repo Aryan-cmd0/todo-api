@@ -1,0 +1,12 @@
+{
+  "name": "todo-api",
+  "private": true,
+  "scripts": {
+    "start": "bun server.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.2.4"
+  }
+}
