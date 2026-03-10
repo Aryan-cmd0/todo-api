@@ -1,8 +1,19 @@
-import express from "express";
+import dotenv from 'dotenv';
+dotenv.config();
+
+//import dependencies
+import express from 'express';
 import connectDB from './config/db.js';
 import todoRoutes from './routes/todoRoutes.js';
 
+//create express app
 const app = express();
+
+//Request Logger Middleware
+app.use((res, req, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+});
 
 //connect database
 await connectDB();
