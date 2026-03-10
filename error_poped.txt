@@ -1,0 +1,3 @@
+Error: Bun-related module/command failures on Windows
+Solution: Shifted project from Bun to npm, removed Bun packages
+Reason: Bun caused compatibility issues; npm ensures smooth Node.js execution
